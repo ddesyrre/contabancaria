@@ -55,7 +55,7 @@ public class Conta {
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
-
+	
 	public boolean sacar(float valor) { 
 		
 		if(this.getSaldo() < valor) {
@@ -65,6 +65,7 @@ public class Conta {
 			
 		this.setSaldo(this.getSaldo() - valor);
 		return true;
+		
 	}
 
 	public void depositar(float valor) {
